@@ -1,0 +1,59 @@
+.box2 {
+    position: relative;
+    background-color: #2c3e50;
+}
+.b2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bar {
+    width: 6px;
+    height: 70px;
+    background-color: #fff;
+    display: inline-block;
+    transform-origin: bottom center;
+    animation: loading 1s ease-in-out infinite;
+}
+
+.bar1 {
+    animation-delay: .1s;
+}
+.bar2 {
+    animation-delay: .2s;
+}
+.bar3 {
+    animation-delay: .3s;
+}
+.bar4 {
+    animation-delay: .4s;
+}
+.bar5 {
+    animation-delay: .5s;
+}
+.bar6 {
+    animation-delay: .6s;
+}
+.bar7 {
+    animation-delay: .7s;
+}
+.bar8 {
+    animation-delay: .8s;
+}
+
+@keyframes loading {
+    0% {
+        background-color: #fff;
+        transform: scaleY(.1);
+    }
+    50% {
+        background-color: #2ecc71;
+        transform: scaleY(1);
+    }
+    100% {
+        background-color: transparent;
+        transform: scaleY(.1);
+    }
+}

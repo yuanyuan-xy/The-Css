@@ -1,0 +1,56 @@
+.box3 {
+    background-color: #eccc68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: 10px solid #7bed9f;
+    position: relative;
+    animation: b3_a1 2s infinite linear;
+}
+
+.b3::after,
+.b3::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -10px;
+    left: 0;
+    border-radius: 50%;
+}
+.b3::after {
+  border-top: 10px solid #747d8c;
+  transform: rotate(120deg);
+}
+.b3::before {
+    border-top: 10px solid #3742fa;
+    transform: rotate(240deg);
+}
+
+.b3 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  animation: b3_a2 2s linear infinite;
+}
+
+
+@keyframes b3_a1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes b3_a2 {
+  to {
+    transform: rotate(-360deg);
+  }
+}

@@ -1,0 +1,17 @@
+.box6 {
+    background: linear-gradient(125deg,#f7b731,#20bf6b,#778ca3,#3867d6,#fc5c65,#3867d6,#778ca3,#20bf6b,#f7b731);
+    background-size: 400%;
+    background-repeat: no-repeat;
+    animation: moveBody 15s infinite linear;
+}
+@keyframes moveBody {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    0% {
+        background-position: 0% 50%;
+    }
+}
